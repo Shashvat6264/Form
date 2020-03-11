@@ -1,29 +1,117 @@
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <div id = "header">
+        <div class = "page-header">
             <h1>Form</h1>
         </div>
-        <div id = "main" class="container">
-            <div class = "row">
-                <div class = "col-6">
-                    <label name = "first_name">First Name</label>
-                </div>
-                <div class = "col-6">
-                    <input type = "text" name = "first_name" class = "col-6" placeholder="First Name">
-                </div>
-            </div>
+        <table class="container table-responsive table">
+            <tr class = "row">
+                <td class = "col-lg-6">
+                    <input id = "no1" type = "text" name="name" class="question" required autocomplete="off">
+                    <label for="no1"><span>First Name</span></label>
+                </td>
+                <td class = "col-lg-6">
+                    <input id = "no2" type = "text" type = "text" name="name" class="question" required autocomplete="off">
+                    <label for="no2"><span>Second Name</span></label>
+                </td>
+            </tr>
+            <tr class = "row">
+                <td class = "col-lg-12">
+                    <input type = "text" name="name" class="question" required autocomplete="off">
+                    <label for = "name"><span>Roll Number</span></label>
+                </td>
+            </tr>
+            <tr class = "row">
+                <td class = "col-lg-12">
+                    <input type = "text" name = "name" class="question" required autocomplete="off">
+                    <label for = "name"><span>Email ID</span></label>
+                </td>
+            </tr>
+            <tr class = "row">
+                <td class = "col-lg-4">
+                    <label for="dob-date">Date</label>
+                    <select id = "operations" class = "form-control form-control-lg" name = "dob-date">
+                        <option value = "31">31</option>
+                        <option value = "30">30</option>
+                        <option value = "29">29</option>
+                        <option value = "28">28</option>
+                        <option value = "27">27</option>
+                        <option value = "26">26</option>
+                        <option value = "25">25</option>
+                        <option value = "24">24</option>
+                        <option value = "23">23</option>
+                        <option value = "22">22</option>
+                        <option value = "21">21</option>
+                        <option value = "20">20</option>
+                        <option value = "19">19</option>
+                        <option value = "18">18</option>
+                        <option value = "17">17</option>
+                        <option value = "16">16</option>
+                        <option value = "15">15</option>
+                        <option value = "14">14</option>
+                        <option value = "13">13</option>
+                        <option value = "12">12</option>
+                        <option value = "11">11</option>
+                        <option value = "10">10</option>
+                        <option value = "9">9</option>
+                        <option value = "8">8</option>
+                        <option value = "7">7</option>
+                        <option value = "6">6</option>
+                        <option value = "5">5</option>
+                        <option value = "4">4</option>
+                        <option value = "3">3</option>
+                        <option value = "2">2</option>
+                        <option value = "1">1</option>
+                    </select>
+                </td>
+                <td class = "col-lg-4">
+                    <label for="dob-month">Month</label>
+                    <select id = "operations" class = "form-control form-control-lg" name = "dob-month">
+                        <option value = "12">December</option>
+                        <option value = "11">November</option>
+                        <option value = "10">October</option>
+                        <option value = "9">September</option>
+                        <option value = "8">August</option>
+                        <option value = "7">July</option>
+                        <option value = "6">June</option>
+                        <option value = "5">May</option>
+                        <option value = "4">April</option>
+                        <option value = "3">March</option>
+                        <option value = "2">February</option>
+                        <option value = "1">January</option>
+                    </select>
+                </td>
+                <td class = "col-lg-4">
+                    <label for="dob-year">Date</label>
+                    <select id = "operations" class = "form-control form-control-lg" name = "dob-year">
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                    </select>
+                    </td>
+            </tr>
+            <tr class = "row">
+                <td class = "col-lg-12"><button class = "btn btn-primary btn-lg btn-block">Submit</button></td>
+            </tr>
+        </table>
+        <div class = "footer">
+            <p>~By Shashvat Gupta <br>Follow me on <a href = "https://github.com/Shashvat6264">GitHub</a></p>
         </div>
     </body>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
-</html>
+    <script src = "js/main.js"></script>
+    </html>
